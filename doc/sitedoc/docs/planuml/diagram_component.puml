@@ -1,0 +1,14 @@
+@startuml diagram_component
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user,"Usuario","Usuarios que interactúan con la aplicación")
+
+System(create_game,"Crear juego","El usuario crea el juego")
+System(star_game,"Iniciar juego","El usuario inicia el juego")
+System(move_cart,"Crear juego","El usuario mueve el carro")
+
+Rel(user, create_game, "Usa")
+Rel(user, star_game, "Usa")
+Rel(user, move_cart, "Usa")
+
+@enduml

@@ -1,4 +1,4 @@
-@startuml diagram_juego
+@startuml diagram_contexto
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
 Person(user,"Usuario","Usuarios que interactúan con la aplicación")
