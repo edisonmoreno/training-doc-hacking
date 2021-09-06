@@ -1,0 +1,18 @@
+@startuml diagram_juego
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(user,"Usuario","Usuarios que interactúan con la aplicación")
+
+System(web_system,"Web Usuario","Aplicación para el usuarios finales")
+
+System(backend_system,"API y Recursos de Computo","Microservicios con funcionalidades del juego")
+
+ContainerDb(database_mongo, "DocumentDB", "NoSQL Database", "Almacenamiento de datos ")
+
+Rel(user, web_system, "Usa")
+
+Rel(web_system, backend_system, "Consume")
+
+Rel(backend_system, database_mongo, "Usa")
+
+@enduml

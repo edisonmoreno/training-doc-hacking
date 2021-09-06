@@ -1,0 +1,5 @@
+site_name: App Cargame Documentación
+nav:
+  - Home: index.md
+  - Documentación técnica: technical-doc.md
+  - Diagramas: diagram.md
